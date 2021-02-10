@@ -1,0 +1,362 @@
+/*=========================css reset ==================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+/*=========================smooth scrolling ==================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #02343f;
+  z-index: 2;
+  opacity: 0.9;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+}
+nav h1 {
+  border-style: double;
+  margin: -11px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container ul {
+  margin: 25px;
+}
+.flex-container a {
+  margin: 20px;
+  color: #f0edcc;
+  padding: 10px;
+}
+
+.flex-container li {
+  list-style-type: none;
+  display: inline;
+}
+.flex-container a:hover {
+  background-color: grey;
+  color: black;
+  border-radius: 15px;
+}
+
+/*=========================nav bar part start ==================== */
+
+/* #navbar li {
+  display: inline-block;
+  font-size: larger;
+} */
+
+/* ============nav bar part end=========================== */
+
+/* =============== background-section start ============== */
+
+#background {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 500px;
+  background-image: url("image21.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  filter: brightness(90%);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#content {
+  text-align: center;
+  line-height: 80px;
+}
+
+#content h1 {
+  font-size: 70px;
+  color: #108bf4;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#content button {
+  font-size: larger;
+  background-color: #02343f;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 15px;
+}
+
+#content button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========================background part end============================*/
+
+/* ========================image part start============================*/
+
+#service {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  /* border: 2px solid red; */
+  background-image: url("image13.jpg");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+.service-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 2px solid red;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: 10px 10px 5px 0 grey;
+
+  padding: 10px 10px;
+}
+.service-type img {
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+#service h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.box,
+p {
+  text-align: center;
+  color: white;
+}
+
+.box h2 {
+  color: black;
+}
+
+/* ========================service part end============================*/
+
+/* ========================image part start============================*/
+
+#image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image-section {
+  position: absolute;
+  top: 1200px;
+  width: 100%;
+  height: auto;
+  background-image: url("image14.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+#image img {
+  height: 300px;
+  width: 300px;
+  box-shadow: 10px 10px 5px 0 grey;
+  border-radius: 10px;
+}
+
+#image-section h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* ========================image part end============================*/
+
+/* ========================footer part start.============================*/
+
+#contact {
+  background-image: url("contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 1720px;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.form-group {
+  margin: 10px;
+  width: 100%;
+}
+
+.form-group input,
+textarea {
+  border: 1px solid black;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 9px;
+}
+
+.form-group label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#contact2 {
+  width: 40%;
+}
+
+#contact h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #02343f;
+  text-align: center;
+}
+
+.submit-section {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* ========================contact part end.============================*/
+
+/* ========================footer part start.============================*/
+.footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 2140px;
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+}
+
+/* ========================footer part end.============================*/
+
+/* ========================Responisve part start.=======================*/
+
+@media screen and (max-width: 740px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  a {
+    text-align: center;
+    display: block;
+  }
+  nav {
+    height: auto;
+    position: relative;
+    /* z-index: 2; */
+    opacity: 0.9;
+  }
+  div#content h1 {
+    font-size: 60px;
+  }
+
+  #content button {
+    font-size: medium;
+  }
+  #content {
+    line-height: 80px;
+  }
+  #service {
+    top: 900px;
+  }
+  .service-type {
+    flex-direction: column;
+  }
+  .service-type {
+    flex-direction: column;
+  }
+
+  #service h1 {
+    font-size: 30px;
+  }
+  #image {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #image img {
+    margin: 20px;
+    height: 200px;
+    width: 150px;
+  }
+
+  div#image-section {
+    top: 2030px;
+  }
+  div#contact {
+    top: 3230px;
+  }
+  div.footer {
+    top: 3910px;
+  }
+  div#contact2 {
+    width: 70%;
+  }
+  .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #background {
+    top: 370px;
+  }
+}
+
+@media screen and (min-width: 741px) {
+  #image img {
+    margin: 20px;
+    height: 200px;
+    width: 150px;
+  }
+
+  #image-section {
+    top: 1160px;
+  }
+  div#contact {
+    top: 1630px;
+  }
+  #service {
+    top: 600px;
+  }
+  div.footer {
+    top: 2370px;
+  }
+}
+
+/* ========================Responisve part end.=======================*/
