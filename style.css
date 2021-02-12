@@ -12,6 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/*=========================nav part start ==================== */
+
 nav {
   background-color: #02343f;
   z-index: 2;
@@ -48,13 +50,6 @@ nav h1 {
   border-radius: 15px;
 }
 
-/*=========================nav bar part start ==================== */
-
-/* #navbar li {
-  display: inline-block;
-  font-size: larger;
-} */
-
 /* ============nav bar part end=========================== */
 
 /* =============== background-section start ============== */
@@ -86,8 +81,6 @@ nav h1 {
 #content h1 {
   font-size: 70px;
   color: #108bf4;
-  background-color: black;
-  
 }
 
 #content button {
@@ -107,13 +100,12 @@ nav h1 {
 
 /* ========================background part end============================*/
 
-/* ========================image part start============================*/
+/* ========================service part start============================*/
 
 #service {
   position: absolute;
   top: 650px;
   width: 100%;
-  /* border: 2px solid red; */
   background-image: url("image13.jpg");
   background-size: cover;
   height: auto;
@@ -198,7 +190,7 @@ p {
 
 /* ========================image part end============================*/
 
-/* ========================footer part start.============================*/
+/* ========================contact  part start.============================*/
 
 #contact {
   background-image: url("contact.jpg");
